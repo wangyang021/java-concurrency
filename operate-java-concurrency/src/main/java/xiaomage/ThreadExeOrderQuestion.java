@@ -10,13 +10,13 @@ import java.util.concurrent.Executors;
  */
 public class ThreadExeOrderQuestion {
     public static void main(String[] args) throws Exception {
-        joinTest();
-        System.out.println("**************");
-        loopTest();
+//        joinTest();
+//        System.out.println("**************");
+//        loopTest();
         System.out.println("**************");
         waitTest();
-        System.out.println("**************");
-        singleThreadPoolTest();
+//        System.out.println("**************");
+//        singleThreadPoolTest();
     }
     // 单线程池实现
     private static void singleThreadPoolTest(){
@@ -46,7 +46,7 @@ public class ThreadExeOrderQuestion {
         }
         while(thread.isAlive()){
             synchronized(thread){
-                thread.wait();
+                thread.wait(1000L);
             }
         }
     }

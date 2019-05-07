@@ -19,13 +19,14 @@ public class NoVisibility {
             while (!ready) {
                 System.out.println(ready);
                 Thread.yield();
-                System.out.println(number);
+                //System.out.println(number);
             }
+            System.out.println(number);
         }
     }
 
-    public static void main(String[] args) {
-        new ReaderThread().run();
+    public static void main(String[] args) throws InterruptedException {
+        new ReaderThread().start();
         number = 42;
         ready = true;
     }

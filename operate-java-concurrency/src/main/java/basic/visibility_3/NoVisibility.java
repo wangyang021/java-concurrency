@@ -7,7 +7,6 @@
  */
 package basic.visibility_3;
 
-import javax.annotation.Generated;
 
 public class NoVisibility {
     private static boolean ready;

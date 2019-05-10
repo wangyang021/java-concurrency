@@ -7,6 +7,8 @@
  */
 package basic.visibility_3;
 
+import java.util.Collections;
+
 public class VolitateTest {
 
 //    private String name;
